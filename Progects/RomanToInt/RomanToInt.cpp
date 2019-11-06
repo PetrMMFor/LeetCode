@@ -6,31 +6,20 @@ int romanToInt(std::string s){
     auto rEnd = s.rend();
     for(auto rIt = s.rbegin(); rIt != rEnd; ++rIt){
         int newMember = 0;
-        switch(*rIt)
-        {
-            case 'I':
-                newMember = 1;
-                break;
-            case 'V':
-                newMember = 5;
-                break;
-            case 'X':
-                newMember = 10;
-                break;
-            case 'L':
-                newMember = 50;
-                break;
-            case 'C':
-                newMember = 100;
-                break;
-            case 'D':
-                newMember = 500;
-                break;
-            case 'M':
-                newMember = 1000;
-                break;
-            default:
-                break;
+        if(*rIt == 'I'){
+            newMember = 1;
+        } else if(*rIt == 'X') {
+            newMember = 10;
+        } else if(*rIt == 'V') {
+            newMember = 5;
+        } else if(*rIt == 'C') {
+            newMember = 100;
+        } else if(*rIt == 'L') {
+            newMember = 50;
+        } else if(*rIt == 'M') {
+            newMember = 1000;
+        } else if(*rIt == 'D') {
+            newMember = 500;
         }
         if(newMember < lastMember){
             sum -= newMember;

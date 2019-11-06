@@ -1,1 +1,1 @@
-add_subdirectory(Roman)
+add_subdirectory(RomanToInt)

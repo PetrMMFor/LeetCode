@@ -1,8 +1,8 @@
 project(Google_tests)
 
 add_executable(Google_Tests_run Test.cpp main.cpp
-        ../Progects/Roman/RomanToInt.h
-        ../Progects/Roman/RomanToInt.cpp)
+        ../Progects/RomanToInt/RomanToInt.h
+        ../Progects/RomanToInt/RomanToInt.cpp)
 
 target_link_libraries(Google_Tests_run gtest gtest_main)
 

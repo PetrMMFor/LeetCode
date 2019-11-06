@@ -1,15 +1,15 @@
 #include <gtest/gtest.h>
 
-#include "../Progects/Roman/RomanToInt.h"
+#include "../Progects/RomanToInt/RomanToInt.h"
 
-class TMP : public ::testing::Test{};
+class RomanToIntTests : public ::testing::Test{};
 
-TEST(TMP, toX){
+TEST(RomanToIntTests, toX){
     int result = romanToInt("III");
     EXPECT_EQ(3, result);
 }
 
-TEST(TMP, afterX){
+TEST(RomanToIntTests, afterX){
     int result = romanToInt("XIII");
     EXPECT_EQ(13, result);
 
@@ -23,7 +23,7 @@ TEST(TMP, afterX){
     EXPECT_EQ(19, result);
 }
 
-TEST(TMP, toL){
+TEST(RomanToIntTests, toL){
     int result = romanToInt("DCXXI");
     EXPECT_EQ(621, result);
 }
