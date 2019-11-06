@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Progects/LeetCod/Progects/Roman/RomanToInt.cpp
+RomanToInt.h
+D:/Progects/LeetCod/Progects/Roman/RomanToInt.h
+
+D:/Progects/LeetCod/Progects/Roman/RomanToInt.h
+string
+-
+

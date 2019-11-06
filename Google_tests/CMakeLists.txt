@@ -1,0 +1,10 @@
+project(Google_tests)
+
+add_executable(Google_Tests_run Test.cpp main.cpp
+        ../Progects/Roman/RomanToInt.h
+        ../Progects/Roman/RomanToInt.cpp)
+
+target_link_libraries(Google_Tests_run gtest gtest_main)
+
+add_subdirectory(lib)
+include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
