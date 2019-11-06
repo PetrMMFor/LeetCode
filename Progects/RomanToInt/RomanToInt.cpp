@@ -2,40 +2,42 @@
 
 int romanToInt(std::string s){
     int sum = 0;
+    int lastMember = 0;
     auto rEnd = s.rend();
     for(auto rIt = s.rbegin(); rIt != rEnd; ++rIt){
-        int number = 0;
+        int newMember = 0;
         switch(*rIt)
         {
             case 'I':
-                number = 1;
+                newMember = 1;
                 break;
             case 'V':
-                number = 5;
+                newMember = 5;
                 break;
             case 'X':
-                number = 10;
+                newMember = 10;
                 break;
             case 'L':
-                number = 50;
+                newMember = 50;
                 break;
             case 'C':
-                number = 100;
+                newMember = 100;
                 break;
             case 'D':
-                number = 500;
+                newMember = 500;
                 break;
             case 'M':
-                number = 1000;
+                newMember = 1000;
                 break;
             default:
                 break;
         }
-        if(number < sum && (sum - number != number)){
-            sum -= number;
-        } else{
-            sum += number;
+        if(newMember < lastMember){
+            sum -= newMember;
+        } else {
+            sum += newMember;
         }
+        lastMember = newMember;
     }
     return sum;
 };
