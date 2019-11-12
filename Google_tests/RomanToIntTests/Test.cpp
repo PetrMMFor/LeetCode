@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 
-#include "../Progects/RomanToInt/RomanToInt.h"
+#include "../../Progects/RomanToInt/RomanToInt.h"
 
 class RomanToIntTests : public ::testing::Test{};
 
